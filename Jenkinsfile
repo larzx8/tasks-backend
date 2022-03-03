@@ -45,6 +45,7 @@ pipeline {
                 deploy adapters: [tomcat9(credentialsId: 'TomcatLogin2', path: '', url: 'http://localhost:8001')], contextPath: 'tasks', war: 'target/tasks.war'
             }
          } 
+       }
     }
 }
 
