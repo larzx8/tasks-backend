@@ -51,8 +51,8 @@ pipeline {
                 dir('functional-test'){
                     git credentialsId: 'github_login', url: 'git@github.com:larzx8/tasks-functional-tests.git'
                     sh 'mvn test'
-                }
             }
+        }
     }
 }
 

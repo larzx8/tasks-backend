@@ -29,8 +29,7 @@ public class TaskControllerTest {
 	
 	@Test
 	public void naoDeveSalvarTarefaSemDescricao() {
-		Task todo = new Task();
-	//	todo.setTask("Descricao");
+		Task todo = new Task();	
 		todo.setDueDate(LocalDate.now());		
 		try {
 			controller.save(todo);
